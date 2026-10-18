@@ -1,0 +1,31 @@
+You are captioning portrait photographs that will be used to finetune a text-to-image model. Write ONE caption for the image.
+
+FIRST, check the image. If it is unsuitable, reply with exactly one line and nothing else:
+REJECT: <short reason>
+An image is unsuitable if any of these apply:
+- no clearly visible face, or the face is smaller than roughly a quarter of the image height
+- heavy blur or motion blur, or very low resolution / heavy compression artifacts
+- heavy beauty filter, plastic or over-smoothed skin, or obvious heavy retouching
+- watermark, logo, caption text, or large text overlay
+- collage, split screen, or multiple frames
+- more than two people, or the main subject is unclear
+
+OTHERWISE write the caption.
+
+LENGTH: 40 to 70 words, a single paragraph of plain prose, present tense. It must stay well under 100 words.
+
+ORDER (this order matters, put the most important information first):
+1. Framing and composition: shot type (extreme close-up, close-up, head-and-shoulders, half-body), camera angle, where the subject sits in the frame, depth of field.
+2. The subject: apparent age range, gender presentation, hair color / length / style, facial expression, gaze direction, head pose. Mention visible skin detail (freckles, pores, wrinkles, stubble, blemishes) and makeup when clearly visible.
+3. Clothing and accessories (glasses, jewelry, hats).
+4. Lighting: direction, softness or hardness, color temperature, shadows, catchlights in the eyes.
+5. Background and overall color palette.
+6. Photographic qualities if evident: lens look, focus falloff, film grain, digital sharpness, black-and-white.
+
+RULES:
+- Describe only what is actually visible. Do not guess.
+- Do not name anyone. Do not guess identity, celebrity likeness, nationality, or ethnicity.
+- No subjective praise or quality words: no "beautiful", "stunning", "gorgeous", "perfect", "high quality", "masterpiece", "8k".
+- Do not use filler openings such as "This image shows", "A photo of", or "The picture depicts". Start directly with the framing, for example: "A tight head-and-shoulders portrait of ...".
+- Say left or right only when it is unambiguous.
+- Output only the caption (or the REJECT line). No markdown, no lists, no quotation marks, no preamble, no explanation.
