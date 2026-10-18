@@ -2,7 +2,11 @@
 
 Supra2-IMG (~104M-param DiT, rectified flow, 256px, Flan-T5 + SD VAE) often produces distorted faces on portrait prompts. This project fixes that in two stages: supervised finetuning on face data, then Flow-GRPO with a face-quality reward.
 
-Weights: https://huggingface.co/nzxhuong/supra2-img-face-grpo
+Weights: https://huggingface.co/NZUONG/supra2-img-face-grpo
+
+| Base | SFT | Flow-grpo |
+|---|---|---|
+|![](samples/base.png)|![](samples/sft.png)|![](samples/grpo.png)|
 
 ## Results
 
@@ -18,9 +22,7 @@ Weights: https://huggingface.co/nzxhuong/supra2-img-face-grpo
 - SFT improved ImageReward over base but lowered the clean-face rate by 3.8 pts.
 - "Clean" = exactly one face
 
-| Base | SFT | Flow-grpo |
-|---|---|---|
-|![](samples/base.png)|![](samples/sft.png)|![](samples/grpo.png)|
+
 
 ## Files
 
